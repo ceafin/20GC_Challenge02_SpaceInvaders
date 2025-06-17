@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bba624dpadi6m"]
+
+[ext_resource type="Texture2D" uid="uid://c2tnn2sk2owiy" path="res://assets/bg.png" id="1_3mpp0"]
+[ext_resource type="PackedScene" uid="uid://bt4ppofs6kkhb" path="res://alien_grid.tscn" id="2_xgxri"]
+
+[node name="InitialWorld" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture = ExtResource("1_3mpp0")
+centered = false
+
+[node name="AlienBullets" type="Node2D" parent="."]
+
+[node name="AlienGrid" parent="." instance=ExtResource("2_xgxri")]

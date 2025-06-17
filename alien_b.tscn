@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://soiaydl2updd"]
+
+[ext_resource type="Script" uid="uid://c3j6kdhm4kyn5" path="res://alien.gd" id="1_r3048"]
+[ext_resource type="Texture2D" uid="uid://c6mn8xvsbtryh" path="res://assets/invoders.png" id="2_d3f1n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3048"]
+atlas = ExtResource("2_d3f1n")
+region = Rect2(24, 0, 12, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3f1n"]
+atlas = ExtResource("2_d3f1n")
+region = Rect2(36, 0, 12, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_myep4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3048")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3f1n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_en08p"]
+size = Vector2(12, 8)
+
+[node name="AlienB" type="Area2D"]
+script = ExtResource("1_r3048")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, 4)
+sprite_frames = SubResource("SpriteFrames_myep4")
+autoplay = "default"
+frame_progress = 0.579272
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, 4)
+shape = SubResource("RectangleShape2D_en08p")

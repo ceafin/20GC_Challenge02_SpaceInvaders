@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp5d44i1mcem2"]
+
+[ext_resource type="Script" uid="uid://bopgkw0e44kw5" path="res://alien_shot.gd" id="1_rrhck"]
+[ext_resource type="Texture2D" uid="uid://bsughomqkprv5" path="res://assets/alien_shot.png" id="2_p8o23"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3562f"]
+size = Vector2(2, 6)
+
+[node name="AlienShot" type="Area2D"]
+script = ExtResource("1_rrhck")
+speed = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3562f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_p8o23")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

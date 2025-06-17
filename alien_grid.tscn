@@ -1,0 +1,254 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt4ppofs6kkhb"]
+
+[ext_resource type="Script" uid="uid://iecbgjy8rbfp" path="res://alien_grid.gd" id="1_33kph"]
+[ext_resource type="PackedScene" uid="uid://b41use4vxlagl" path="res://alien_a.tscn" id="2_sas81"]
+[ext_resource type="PackedScene" uid="uid://soiaydl2updd" path="res://alien_b.tscn" id="3_20cpa"]
+[ext_resource type="PackedScene" uid="uid://drdxr77qo481t" path="res://alien_c.tscn" id="4_p0wb4"]
+
+[node name="AlienGrid" type="Node2D"]
+script = ExtResource("1_33kph")
+
+[node name="AlienTicker" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[node name="AlienA" parent="." instance=ExtResource("2_sas81")]
+
+[node name="AlienB" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(0, 30)
+
+[node name="AlienC" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(0, 50)
+
+[node name="AlienA2" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(14, 0)
+
+[node name="AlienB2" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(14, 30)
+
+[node name="AlienC2" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(14, 50)
+
+[node name="AlienA3" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(28, 0)
+
+[node name="AlienB3" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(28, 30)
+
+[node name="AlienC3" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(28, 50)
+
+[node name="AlienA4" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(42, 0)
+
+[node name="AlienB4" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(42, 30)
+
+[node name="AlienC4" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(42, 50)
+
+[node name="AlienA5" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(56, 0)
+
+[node name="AlienB5" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(56, 30)
+
+[node name="AlienC5" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(56, 50)
+
+[node name="AlienA6" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(70, 0)
+
+[node name="AlienB6" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(70, 30)
+
+[node name="AlienC6" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(70, 50)
+
+[node name="AlienA7" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(84, 0)
+
+[node name="AlienB7" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(84, 30)
+
+[node name="AlienC7" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(84, 50)
+
+[node name="AlienA8" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(98, 0)
+
+[node name="AlienB8" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(98, 30)
+
+[node name="AlienC8" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(98, 50)
+
+[node name="AlienA9" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(0, 10)
+
+[node name="AlienB9" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(0, 30)
+
+[node name="AlienC9" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(0, 50)
+
+[node name="AlienA10" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(14, 10)
+
+[node name="AlienB10" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(14, 30)
+
+[node name="AlienC10" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(14, 50)
+
+[node name="AlienA11" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(28, 10)
+
+[node name="AlienB11" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(28, 30)
+
+[node name="AlienC11" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(28, 50)
+
+[node name="AlienA12" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(42, 10)
+
+[node name="AlienB12" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(42, 30)
+
+[node name="AlienC12" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(42, 50)
+
+[node name="AlienA13" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(56, 10)
+
+[node name="AlienB13" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(56, 30)
+
+[node name="AlienC13" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(56, 50)
+
+[node name="AlienA14" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(70, 10)
+
+[node name="AlienB14" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(70, 30)
+
+[node name="AlienC14" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(70, 50)
+
+[node name="AlienA15" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(84, 10)
+
+[node name="AlienB15" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(84, 30)
+
+[node name="AlienC15" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(84, 50)
+
+[node name="AlienA16" parent="." instance=ExtResource("2_sas81")]
+position = Vector2(98, 10)
+
+[node name="AlienB16" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(98, 30)
+
+[node name="AlienB17" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(0, 20)
+
+[node name="AlienB18" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(14, 20)
+
+[node name="AlienB19" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(28, 20)
+
+[node name="AlienB20" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(42, 20)
+
+[node name="AlienB21" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(56, 20)
+
+[node name="AlienB22" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(70, 20)
+
+[node name="AlienB23" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(84, 20)
+
+[node name="AlienB24" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(98, 20)
+
+[node name="AlienB25" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(0, 20)
+
+[node name="AlienB26" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(14, 20)
+
+[node name="AlienB27" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(28, 20)
+
+[node name="AlienB28" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(42, 20)
+
+[node name="AlienB29" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(56, 20)
+
+[node name="AlienB30" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(70, 20)
+
+[node name="AlienB31" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(84, 20)
+
+[node name="AlienB32" parent="." instance=ExtResource("3_20cpa")]
+position = Vector2(98, 20)
+
+[node name="AlienC16" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(98, 50)
+
+[node name="AlienC17" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(0, 40)
+
+[node name="AlienC18" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(14, 40)
+
+[node name="AlienC19" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(28, 40)
+
+[node name="AlienC20" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(42, 40)
+
+[node name="AlienC21" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(56, 40)
+
+[node name="AlienC22" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(70, 40)
+
+[node name="AlienC23" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(84, 40)
+
+[node name="AlienC24" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(98, 40)
+
+[node name="AlienC25" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(0, 40)
+
+[node name="AlienC26" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(14, 40)
+
+[node name="AlienC27" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(28, 40)
+
+[node name="AlienC28" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(42, 40)
+
+[node name="AlienC29" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(56, 40)
+
+[node name="AlienC30" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(70, 40)
+
+[node name="AlienC31" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(84, 40)
+
+[node name="AlienC32" parent="." instance=ExtResource("4_p0wb4")]
+position = Vector2(98, 40)
+
+[connection signal="timeout" from="AlienTicker" to="." method="_on_alien_ticker_timeout"]
