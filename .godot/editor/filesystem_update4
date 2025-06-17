@@ -1,0 +1,8 @@
+res://initial_world.tscn
+res://alien.gd
+res://alien_a.tscn
+res://alien_b.tscn
+res://alien_c.tscn
+res://alien_grid.gd
+res://alien_shot.gd
+res://alien_shot.tscn
