@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Sporce Invorders"
-run/main_scene="uid://orxcwgjhq6hi"
+run/main_scene="uid://du6n4bf0443ur"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

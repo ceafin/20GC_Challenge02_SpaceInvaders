@@ -1,0 +1,12 @@
+res://alien_a.tscn::ca02bf3da118a6575744bf21a3c10d2f::1750382596::res://.godot/exported/133200997/export-c72d2b7fc93ce3c95bf9b4a5a1526f1d-alien_a.scn
+res://alien_b.tscn::e513f31ea8586a74379b9a0a063fc1e5::1750382592::res://.godot/exported/133200997/export-5521b13889487342fc3b5b4e83a9f7b6-alien_b.scn
+res://alien_c.tscn::b8add4a3be64e1bbf769d5fccad87829::1750382578::res://.godot/exported/133200997/export-cd7ad9b8f93fd40c41d64934bf7a2379-alien_c.scn
+res://alien_grid.tscn::a42af49de2321b0a72c44fab35a3941a::1750127638::res://.godot/exported/133200997/export-4aa993bd39ea5edd3d47f872232892f6-alien_grid.scn
+res://alien_shot.tscn::0620dd8f300bd5152d50b358f028a219::1750386754::res://.godot/exported/133200997/export-21236f5e798fe05007ab2157c6d181ac-alien_shot.scn
+res://bunker.tscn::88e96dd8a271d1b95426fdc1d7a861bc::1750382618::res://.godot/exported/133200997/export-873bad3ff55ec85c0c93f32b16ad0be0-bunker.scn
+res://game_manager.tscn::37b53fdcb3a5e41a367bbf08514f017d::1750441556::res://.godot/exported/133200997/export-bd5ff995e4b5bf3753a213b334e1b8c4-game_manager.scn
+res://initial_world.tscn::7ee19542aea93b24f42863d9ccc2f328::1750441556::res://.godot/exported/133200997/export-a82fe2d3456f852bbdb4b34874ad9130-initial_world.scn
+res://player_shot.tscn::5d4a40aedb2aaae4d4446c7488810c31::1750386754::res://.godot/exported/133200997/export-7661d72ce5364b6cbe137c8ceaf8f817-player_shot.scn
+res://player_tank.tscn::555372f2c4ef5f03b18618c55b802a27::1750387481::res://.godot/exported/133200997/export-0a0369b9d57ded78f44e4c6c54ccb9fc-player_tank.scn
+res://title_screen.tscn::29126081bbd8db749b924acda77bec7f::1750441556::res://.godot/exported/133200997/export-22e59c4ebacac7a9e73c1ffd541bda9a-title_screen.scn
+res://ui_text.tres::88fac2425f846f430a546f051e3d995f::1750388561::res://.godot/exported/133200997/export-330b1b8eaa896e16325e8633a8a05ef0-ui_text.res
