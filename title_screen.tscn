@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://du6n4bf0443ur"]
+
+[ext_resource type="Script" uid="uid://13k35w6glmh6" path="res://title_screen.gd" id="1_ig5kc"]
+[ext_resource type="Texture2D" uid="uid://0cbasmdncrkv" path="res://assets/splash_title.png" id="1_v6p8y"]
+[ext_resource type="FontFile" uid="uid://bpqhlc6bhtdba" path="res://fonts/Ac437_PhoenixEGA_8x8.ttf" id="2_ak2if"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ig5kc"]
+font = ExtResource("2_ak2if")
+font_size = 10
+font_color = Color(0.607843, 0.737255, 0.0588235, 1)
+outline_size = 4
+outline_color = Color(0.0588235, 0.219608, 0.0588235, 1)
+shadow_size = 4
+shadow_color = Color(0.188235, 0.384314, 0.188235, 1)
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource("1_ig5kc")
+
+[node name="SplashTitle" type="Sprite2D" parent="."]
+texture = ExtResource("1_v6p8y")
+centered = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Overlay" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Start" type="Label" parent="CanvasLayer/Overlay"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_top = -42.0
+offset_right = 67.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+rotation = -0.270526
+text = "Press Spacebar
+to Start!"
+label_settings = SubResource("LabelSettings_ig5kc")

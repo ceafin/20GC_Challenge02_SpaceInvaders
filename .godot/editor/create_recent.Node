@@ -1,0 +1,11 @@
+CanvasLayer
+Label
+Control
+Timer
+HBoxContainer
+CollisionPolygon2D
+CollisionShape2D
+Node2D
+Area2D
+Sprite2D
+VisibleOnScreenNotifier2D

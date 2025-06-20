@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bba624dpadi6m"]
+[gd_scene load_steps=5 format=3 uid="uid://bba624dpadi6m"]
 
 [ext_resource type="Texture2D" uid="uid://c2tnn2sk2owiy" path="res://assets/bg.png" id="1_3mpp0"]
 [ext_resource type="PackedScene" uid="uid://bt4ppofs6kkhb" path="res://alien_grid.tscn" id="2_xgxri"]
+[ext_resource type="PackedScene" uid="uid://b4ua6mws6ql4k" path="res://player_tank.tscn" id="3_10l6d"]
+[ext_resource type="PackedScene" uid="uid://cjk6w4p78y3hm" path="res://bunker.tscn" id="4_j80fy"]
 
 [node name="InitialWorld" type="Node2D"]
 
@@ -9,6 +11,23 @@
 texture = ExtResource("1_3mpp0")
 centered = false
 
-[node name="AlienBullets" type="Node2D" parent="."]
+[node name="Bullets" type="Node2D" parent="."]
 
 [node name="AlienGrid" parent="." instance=ExtResource("2_xgxri")]
+
+[node name="PlayerTank" parent="." instance=ExtResource("3_10l6d")]
+position = Vector2(6, 89)
+
+[node name="Bunkers" type="Node2D" parent="."]
+
+[node name="Bunker" parent="Bunkers" instance=ExtResource("4_j80fy")]
+position = Vector2(24, 117)
+
+[node name="Bunker2" parent="Bunkers" instance=ExtResource("4_j80fy")]
+position = Vector2(56, 117)
+
+[node name="Bunker3" parent="Bunkers" instance=ExtResource("4_j80fy")]
+position = Vector2(88, 117)
+
+[node name="Bunker4" parent="Bunkers" instance=ExtResource("4_j80fy")]
+position = Vector2(120, 117)

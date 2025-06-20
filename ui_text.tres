@@ -1,0 +1,14 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://b0t305cm87h8v"]
+
+[ext_resource type="FontFile" uid="uid://bpqhlc6bhtdba" path="res://fonts/Ac437_PhoenixEGA_8x8.ttf" id="1_e43yp"]
+
+[resource]
+line_spacing = 0.0
+font = ExtResource("1_e43yp")
+font_size = 4
+font_color = Color(0.607843, 0.737255, 0.0588235, 1)
+outline_size = 2
+outline_color = Color(0.188235, 0.384314, 0.188235, 1)
+shadow_size = 2
+shadow_color = Color(0.0588235, 0.219608, 0.0588235, 1)
+shadow_offset = Vector2(2, 2)

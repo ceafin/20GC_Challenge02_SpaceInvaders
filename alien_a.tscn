@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://c3j6kdhm4kyn5" path="res://alien.gd" id="1_tkfsc"]
 [ext_resource type="Texture2D" uid="uid://c6mn8xvsbtryh" path="res://assets/invoders.png" id="2_jwmch"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_en08p"]
+size = Vector2(12, 8)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_iy44m"]
 atlas = ExtResource("2_jwmch")
 region = Rect2(0, 0, 12, 8)
@@ -25,21 +28,20 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_en08p"]
-size = Vector2(12, 8)
-
 [node name="AlienA" type="Area2D"]
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_tkfsc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, 4)
+shape = SubResource("RectangleShape2D_en08p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_myep4")
 autoplay = "default"
 frame_progress = 0.949843
 centered = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(6, 4)
-shape = SubResource("RectangleShape2D_en08p")
 
 [node name="ShotTimer" type="Timer" parent="."]
 autostart = true

@@ -1,0 +1,97 @@
+[gd_scene load_steps=6 format=3 uid="uid://orxcwgjhq6hi"]
+
+[ext_resource type="Script" uid="uid://dvqyy3bccujx7" path="res://game_manager.gd" id="1_70yv6"]
+[ext_resource type="PackedScene" uid="uid://bba624dpadi6m" path="res://initial_world.tscn" id="2_smx3j"]
+[ext_resource type="LabelSettings" uid="uid://b0t305cm87h8v" path="res://ui_text.tres" id="3_o2178"]
+[ext_resource type="FontFile" uid="uid://bpqhlc6bhtdba" path="res://fonts/Ac437_PhoenixEGA_8x8.ttf" id="4_d5upp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vk86k"]
+font = ExtResource("4_d5upp")
+font_color = Color(0.607843, 0.737255, 0.0588235, 1)
+outline_size = 4
+outline_color = Color(0.188235, 0.384314, 0.188235, 1)
+shadow_size = 4
+shadow_color = Color(0.0588235, 0.219608, 0.0588235, 1)
+shadow_offset = Vector2(2, 2)
+
+[node name="GameManager" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_70yv6")
+
+[node name="InitialWorld" parent="." instance=ExtResource("2_smx3j")]
+process_mode = 1
+
+[node name="UI" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="HUD" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBox" type="HBoxContainer" parent="UI/HUD"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 8.0
+grow_horizontal = 2
+
+[node name="ScoreLabel" type="Label" parent="UI/HUD/HBox"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Score:"
+label_settings = ExtResource("3_o2178")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ScoreText" type="Label" parent="UI/HUD/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "000000"
+label_settings = ExtResource("3_o2178")
+vertical_alignment = 1
+
+[node name="LivesLabel" type="Label" parent="UI/HUD/HBox"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Lives:"
+label_settings = ExtResource("3_o2178")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="LivesText" type="Label" parent="UI/HUD/HBox"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "0"
+label_settings = ExtResource("3_o2178")
+vertical_alignment = 1
+
+[node name="RespawnOverlay" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UI/RespawnOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = "Get Ready!"
+label_settings = SubResource("LabelSettings_vk86k")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RespawnTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="RespawnTimer" to="." method="_on_respawn_timer_timeout"]
